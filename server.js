@@ -55,7 +55,7 @@ app.get("/about", (req, res) => {
 });
 
 app.get("/projects", (req, res) => {
-	res.render("projects");
+	res.render("projects", test("Projects"));
 });
 
 app.get("/bad", (req, res) => {
