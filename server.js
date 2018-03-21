@@ -54,6 +54,10 @@ app.get("/about", (req, res) => {
 	res.render("about", test("About page!"));
 });
 
+app.get("/projects", (req, res) => {
+	res.render("projects");
+});
+
 app.get("/bad", (req, res) => {
 	res.send({
 		code: "YOLO",
